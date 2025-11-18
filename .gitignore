@@ -1,0 +1,47 @@
+# Global ignores
+.DS_Store
+node_modules/
+.env
+.env.*
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+dist/
+
+# Ignore OS/Editor files
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore test output
+*.test-results.xml
+
+# Ignore build artifacts
+build/
+
+# Ignore frontend and backend dependencies
+frontend/node_modules/
+backend/vendor/
+backend/storage/
+backend/.env
+backend/.env.*
+backend/.phpunit.result.cache
+backend/.cache/
+backend/.coverage/
+backend/.DS_Store
+backend/public/storage
+backend/bootstrap/cache/
+
+# Ignore frontend build
+frontend/dist/
+frontend/.env
+frontend/.env.*
+frontend/.DS_Store
+frontend/.cache/
+frontend/.coverage/

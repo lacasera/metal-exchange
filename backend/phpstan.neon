@@ -1,0 +1,33 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - app/
+        - routes/
+        - config/
+        - database/
+
+    level: 8
+
+    checkMissingIterableValueType: true
+    checkGenericClassInNonGenericObjectType: false
+
+    checkMissingCallableSignature: true
+
+    ignoreErrors:
+        # Ignore Eloquent dynamic property access
+        - '#Access to an undefined property App\\Models\\\w+::\$.*#'
+
+        # Ignore Laravel magic where() scopes
+        - '#Call to an undefined method Illuminate\\Database\\Eloquent\\Builder::where.*#'
+
+        # Allow Event/Listener magical interactions
+        - '#Call to an undefined method App\\Domain\\.*Events.*#'
+
+    scanFiles:
+        - bootstrap/app.php
+
+    scanDirectories:
+        - database/
+        - app/

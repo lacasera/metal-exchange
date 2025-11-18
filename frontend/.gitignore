@@ -1,0 +1,32 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules/
+dist/
+.env
+.env.*
+.DS_Store
+.cache/
+.coverage/
+
+# IDE & OS
+.vscode/
+.idea/
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# Test output
+*.test-results.xml
+
+# Build artifacts
+build/

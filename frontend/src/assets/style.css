@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.flash-up {
+  animation: flashGreen 0.6s ease-out;
+}
+
+.flash-down {
+  animation: flashRed 0.6s ease-out;
+}
+
+@keyframes flashGreen {
+  0%   { background-color: #d1fae5; }
+  100% { background-color: transparent; }
+}
+
+@keyframes flashRed {
+  0%   { background-color: #fee2e2; }
+  100% { background-color: transparent; }
+}

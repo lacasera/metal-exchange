@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Logs
+storage/logs/*
+!storage/logs/.gitkeep
+
+# Cache and temporary files
+storage/framework/cache/*
+!storage/framework/cache/.gitkeep
+storage/framework/sessions/*
+!storage/framework/sessions/.gitkeep
+storage/framework/views/*
+!storage/framework/views/.gitkeep
+bootstrap/cache/*
+!bootstrap/cache/.gitkeep
+
+# Build artifacts
+public/build/
+public/hot
+public/mix-manifest.json
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Environment files (but allow .env.build for Docker builds)
+.env.local
+.env.*.local
+
+# Test files
+tests/
+phpunit.xml
+.phpunit.result.cache
+
+# Documentation
+README.md
+*.md
+
+# Docker files (we'll copy them explicitly)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
