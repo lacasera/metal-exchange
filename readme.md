@@ -103,7 +103,7 @@ frontend/
 docker/
 ├── docker-compose.yml
 └── mysql-init.d/
-    └── create_databases.sql
+    └── init.sql
 ```
 ## 🔧 Requirements
 
